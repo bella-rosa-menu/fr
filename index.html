@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Rosa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Bebas+Neue&family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&family=Jersey+10+Charted&family=Madimi+One&family=Poppins:wght@700&family=Quicksand:wght@300..700&family=Sixtyfour&family=Space+Grotesk:wght@300..700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+    <script src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html{
+            overflow: hidden;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }a {
+            color: #ffa600;
+             text-decoration:underline; 
+        }a:hover{
+            color:#ffa600; 
+             text-decoration:underline; 
+            
+        }.containerr{
+    width: 112px;
+    height: 112px;
+    position: relative;
+}
+
+.box1, .box2, .box3{
+    border : 16px solid rgb(73, 34, 34);
+    box-sizing : border-box;
+    position : absolute;
+    display : block;
+}
+ 
+ .box1{
+    width: 112px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 0px;
+    animation: anime1 4s 0s forwards ease-in-out infinite;
+ }
+   
+ .box2{
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
+    animation: anime2 4s 0s forwards ease-in-out infinite;
+ }
+   
+ .box3{
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 64px;
+    animation: anime3 4s 0s forwards ease-in-out infinite;
+ }
+   
+   
+   
+@keyframes anime1 {
+    0%{
+        width: 112px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }12.5%{
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }25%{
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }37.5%{
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }50%{
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }62.5%{
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }75%{
+        width: 48px;
+        height: 112px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }87.5%{
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }100%{
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes anime2{
+    0%{
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left :0px;
+    }12.5%{
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left :0px;
+    }25%{
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }37.5%{
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }50%{
+        width: 112px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left :0px;
+    }62.5%{
+        width :48px;
+        height :48px;
+        margin-top :0px;
+        margin-left: 64px;
+    }
+    75%{
+
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 64px;
+    }
+    87.5%{
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 64px;
+    }100%{
+
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 64px;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes anime3{
+    0%{
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 64px;
+    }12.5%{
+        width :48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left :64px;
+    }25%{
+        width: 48px;
+        height: 112px;
+        margin-top: 0px;
+        margin-left: 64px;
+    }37.5%{
+        width :48px;
+        height :48px;
+        margin-top :64px;
+        margin-left :64px;
+    }50%{
+        width :48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 64px;
+    }62.5%{
+
+        width :48px;
+        height: 48px;
+        margin-top :64px;
+        margin-left :64px;
+    }75%{
+        width: 48px;
+        height :48px;
+        margin-top :64px;
+        margin-left :64px;
+    }
+    87.5%{
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 64px;
+    }100%{
+        width: 112px;
+        height: 48px;
+        margin-top :64px;
+        margin-left :0px;
+    }
+}#main{
+            width: 100vw;
+            height: calc(100vh - 50px);
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            padding: 1vh 2vw;
+        }#logo{
+         height: 80px;
+
+        }#side-bar{
+            width: 15vw;
+            height: 90vh;
+            /* border:var(--bs-border-width) solid var(--bs-border-color);
+            border-radius: var(--bs-border-radius); */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            & > div {
+                width: calc(100vh / 20);
+                height: calc(100vh / 20);
+                border: 1px solid rgb(73, 34, 34);
+                border-radius: 50%;
+                background-color: white;
+            };
+            span {
+                background-color: rgb(73, 34, 34) ;
+                width: calc(100vh / 80);
+                height: 80vh;
+                position: absolute;
+                top: 50%;
+                border-radius:calc(100vh / 70);
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+                
+
+                
+            }
+        }#menu{
+            width: 80vw;
+            max-height: 90vh;
+            min-height: 90vh;
+            overflow-x: scroll;
+            /* border:var(--bs-border-width) solid var(--bs-border-color);
+            border-radius: var(--bs-border-radius); */
+        }.selected{
+            width: calc(100vh / 15) !important; 
+            height: calc(100vh / 15) !important;
+            background-color: rgb(73, 34, 34)  !important;
+            color: white !important;
+            transition: ease-out .5;
+            animation-4s: 1.8s;
+            animation-name: selectedAnim;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            box-shadow: 0 0 3px rgb(73, 34, 34);
+        }.items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            color: rgb(73, 34, 34);
+            background-size: cover; 
+            background-position: center;
+            transition: all .5s;
+        }
+
+        @keyframes selectedAnim {
+
+        to {
+            scale: 115%;
+            border: 1.2px solid white;
+            box-shadow: 0 0 9px rgb(112, 112, 112);
+        }
+        }.card{
+            width: 37vw;
+            margin: 2vw 0;
+            .card-body{
+                padding: 8px;
+            }p{
+                font-size: 14px;
+                color: rgb(121, 121, 121);
+                font-family: "Work Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-weight: 400;
+
+            }h5{
+                margin-bottom:5px;
+                color: rgb(97, 59, 59);
+                font-family: "Playwrite IS", cursive;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 1rem;
+
+
+            }
+        }.roww{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            
+        }#sugg h1{
+            font-family: "Playwrite IS", cursive;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                color: #012840;
+        }.item_con{
+            display: flex;
+            justify-content: space-between;
+            margin: .5rem 0;
+            padding: 0 1rem;
+            border-bottom: 1px solid rgb(73, 34, 34);
+            border-radius: 20%;
+            font-family: 'ubuntu';
+            & span{ 
+                color: rgb(121, 121, 121);
+                font-weight: 300;
+             }
+            & span:first-of-type { 
+                color: rgb(73, 34, 34);
+                font-weight: 400;
+
+             }
+        }#coffe_container, #tea_container, #ice_tea_container, #bubble_tea_container, #mokhito_container
+        , #juice_container, #burger_container, #breakfast_container, #plats_container, #tacos_container
+        , #sandwich_container, #salade_container, #crepe_sucree_container, #crepe_salee_container
+        , #dessert_container, #gaufre_container, #icecream_container, #cocktail_container
+        , #milkshake_container{
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            margin-bottom: 1rem; 
+            padding-bottom: 1rem;  
+            border:var(--bs-border-width) solid var(--bs-border-color); 
+            border-radius: var(--bs-border-radius);
+
+            & .cover {
+                width: unset;
+                height: 200px;
+                background-size: cover;
+                background-position: center;
+                width: 100%; 
+                border-top-right-radius: var(--bs-border-radius);
+                border-top-left-radius: var(--bs-border-radius);
+            }
+            & h1 {
+                color: #ffa600 !important;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div style="position: absolute; top:0; width: 100vw; height: 100vh; backdrop-filter: blur(15px); z-index: 3; display: flex; justify-content: center; align-items: center; background-color: rgba(255, 255, 255, 0.36);" id="loader">
+        <div class="containerr">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+    <div id="main">
+        
+  
+
+
+        
+        <div id="side-bar">
+            <span></span>
+            <div id="coffe" class="selected items" style="background-image: url('images/special.webp') ; border-color: white;"></div>
+            <div id="tea" class="items" style="background-image: url('images/tea_2.webp') ;"></div>
+            <div id="drinks" class="items"  style="background-image: url('images/drinks.webp') ;">
+            </div>
+
+            <div id="breakfast" class="items" style="background-image: url('images/breakfast.webp') ;"></div>           
+            <div id="plats" class="items" style="background-image: url('images/plats.webp') ;"></div>
+            <div id="burgers" class="items" style="background-image: url('images/burger.webp') ;"></div>
+            <div id="tacos" class="items" style="background-image: url('images/tacos.webp') ;"></div>
+            <div id="sandwich" class="items" style="background-image: url('images/sandwitch.webp') ;"></div>
+
+            <div id="salades" class="items" style="background-image: url('images/salad.webp') ;"></div>
+            <div id="crepes" class="items" style="background-image: url('images/pancakes.webp') ;">
+                <div id="crepessucrees"></div>
+                <div id="crepessalees"></div>
+            </div>
+            <div id="dessert" class="items" style="background-image: url('images/desert.webp') ;">
+                <div id="dessert1"></div>
+                <div id="gaufres"></div>
+            </div>
+            <div id="glaces" class="items" style="background-image: url('images/icecream.webp') ;"></div>
+        </div>
+
+        <div id="menu">
+            <div style="width: 100%; display: flex; justify-content: center; align-items: start; height: 100px;">
+                <img src="images/logo.webp" id="logo">
+            </div>
+            <div id="sugg">
+                
+                <div id="coffe_container" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="cover"  style="background-image: url('images/cofff.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Café</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Expresso</span> <span>9dh</span></div>
+                        <div class="item_con"><span>Américaine</span> <span>14dh</span></div>
+                        <div class="item_con"><span>Ancienne</span> <span>17dh</span></div>
+                        <div class="item_con"><span>Café Créme</span> <span>12dh</span></div>
+                        <div class="item_con"><span>Chocolat Chaude</span> <span>12dh</span></div>
+                        <div class="item_con"><span>Lait Chaud</span> <span>7dh</span></div>
+                        <div class="item_con"><span>Lait Lipton / Louiza</span> <span>12dh</span></div>
+                        <div class="item_con"><span>Cappuccino Italien</span> <span>14dh</span></div>
+                        <div class="item_con"><span>Cappuccino Viennois</span> <span>14dh</span></div>
+                        <div class="item_con"><span>Frapuccino</span> <span>18dh</span></div>
+                        <div class="item_con"><span>Café Laittée</span> <span>12dh</span></div>
+                        <div class="item_con"><span>Café Sépare</span> <span>11dh</span></div>
+                    </div>
+                </div>
+           
+                <div id="tea_container">
+                    <div class="cover" style="background-image: url('images/tea.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Thé et Infusions</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Thé Menthe</span> <span>10dh</span></div>
+                        <div class="item_con"><span>Thé Occidental</span> <span>11dh</span></div>
+                        <div class="item_con"><span>Thé Louiza</span> <span>12dh</span></div>
+                    </div>
+                </div>
+                <div id="ice_tea_container">
+                    <div class="cover" style="background-image: url('images/ice_tea.webp') ;"></div>
+
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Ice Tea</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Thé Menthe</span> <span>10dh</span></div>
+                        <div class="item_con"><span>Thé Occidental</span> <span>11dh</span></div>
+                        <div class="item_con"><span>Thé Louiza</span> <span>12dh</span></div>
+                    </div>
+                </div>
+                <div id="bubble_tea_container">
+                    <div class="cover" style="background-image: url('images/bubble_tea.webp') ;"></div>
+                    
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Bubble Tea</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Thé Menthe</span> <span>10dh</span></div>
+                        <div class="item_con"><span>Thé Occidental</span> <span>11dh</span></div>
+                        <div class="item_con"><span>Thé Louiza</span> <span>12dh</span></div>
+                    </div>
+                </div>
+
+                <div id="cocktail_container">
+                    <div class="cover" style="background-image: url('images/cocktail.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Cocktails</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Tonic</span> <span>18dh</span></div>
+                        <div class="item_con"><span>Tropical</span> <span>22dh</span></div>
+                        <div class="item_con"><span>Copa Cabana</span> <span>21dh</span></div>
+                        <div class="item_con"><span>Bora Bora</span> <span>22dh</span></div>
+                    </div>
+                </div>
+
+                <div id="mokhito_container">
+                    <div class="cover" style="background-image: url('images/mokhito.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Mokhito</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Mokhito Virgin</span> <span>20dh</span></div>
+                        <div class="item_con"><span>Mokhito Ananas</span> <span>24dh</span></div>
+                        <div class="item_con"><span>Mokhito Streawberry</span> <span>24dh</span></div>
+                        <div class="item_con"><span>Mokhito Mangue</span> <span>24dh</span></div>
+                        <div class="item_con"><span>Mokhito Red Bull</span> <span>32dh</span></div>
+                        <div class="item_con"><span>Mokhito Spécial</span> <span>35dh</span></div>
+                    </div>
+                </div>
+
+                <div id="milkshake_container">
+                    <div class="cover" style="background-image: url('images/milkshak.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Milkshakes</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Vanille</span> <span>18dh</span></div>
+                        <div class="item_con"><span>Fraise</span> <span>19dh</span></div>
+                        <div class="item_con"><span>Chocolat</span> <span>18dh</span></div>
+                    </div>
+                </div>
+
+                <div id="milkshake_container">
+                    <div class="cover" style="background-image: url('images/jus.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Jus</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Banane</span> <span>16dh</span></div>
+                        <div class="item_con"><span>Orange</span> <span>16dh</span></div>
+                        <div class="item_con"><span>Citron</span> <span>17dh</span></div>
+                        <div class="item_con"><span>Pomme</span> <span>16dh</span></div>
+                        <div class="item_con"><span>Ananas</span> <span>18dh</span></div>
+                        <div class="item_con"><span>Mangue</span> <span>18dh</span></div>
+                        <div class="item_con"><span>Avocat</span> <span>21dh</span></div>
+                        <div class="item_con"><span>Kiwi</span> <span>18dh</span></div>
+                    </div>
+                </div>
+
+                
+                <div id="juice_container">
+                    <div class="cover" style="background-image: url('images/drinks_2.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Boisson Fraiche</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Eau Minérale 1.5L</span> <span>9dh</span></div>
+                        <div class="item_con"><span>Eau Minérale 0.33L</span> <span>4dh</span></div>
+                        <div class="item_con"><span>Ouelmes</span> <span>9dh</span></div>
+                        <div class="item_con"><span>Soda</span> <span>10dh</span></div>
+                    </div>
+                </div> 
+
+
+
+                <div id="breakfast_container" >
+                    <div class="cover" style="background-image: url('images/breakfast_2.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Petit Déjeuner</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Chamali</span> <span>28dh</span></div>
+                        <div class="item_con"><span>Parisien</span> <span>26dh</span></div>
+                        <div class="item_con"><span>Classique</span> <span>20dh</span></div>
+                        <div class="item_con"><span>Tazi</span> <span>27dh</span></div>
+                        <div class="item_con"><span>Fassi</span> <span>28dh</span></div>
+                        <div class="item_con"><span>Croque Mr ou Mme</span> <span>33dh</span></div>
+                    </div>
+                </div> 
+                <div id="plats_container" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="cover" style="background-image: url('images/plat.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Plats</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Bella Rosa</span><span>55dh</span></div>
+                        <div class="item_con"><span>Croquant</span><span>50dh</span></div>
+                    </div>
+                </div> 
+
+                 <div id="burger_container" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="cover" style="background-image: url('images/burger_2.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Burgers</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Chiken Burger</span> <span>32dh</span></div>
+                        <div class="item_con"><span>Humburger</span> <span>34dh</span></div>
+                    </div>
+                </div> 
+
+                 <div id="tacos_container" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="cover" style="background-image: url('images/tacos_2.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Tacos</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Poulet</span> <span>30dh</span></div>
+                        <div class="item_con"><span>Viande Hachée</span> <span>30dh</span></div>
+                        <div class="item_con"><span>Cordon Bleu</span> <span>45dh</span></div>
+                        <div class="item_con"><span>Mixte</span> <span>45dh</span></div>
+                        <div class="item_con"><span>Nuggets</span> <span>42dh</span></div>
+                    </div>
+                </div> 
+
+                <div id="sandwich_container" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="cover" style="background-image: url('images/sandwich.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Sandwich</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Poulet</span> <span>25dh</span></div>
+                        <div class="item_con"><span>Viande Hachée</span> <span>25dh</span></div>
+                        <div class="item_con"><span>Cordon Bleu</span> <span>32dh</span></div>
+                        <div class="item_con"><span>Mixte</span> <span>30dh</span></div>
+                        <div class="item_con"><span>Nuggets</span> <span>30dh</span></div>
+                    </div>
+                </div>
+
+                <div id="salade_container" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="cover" style="background-image: url('images/salade.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Salades</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Salade Mexican</span> <span>23dh</span></div>
+                        <div class="item_con"><span>Bella Rosa</span> <span>32dh</span></div>
+                    </div>
+                </div>
+
+                <div id="crepe_sucree_container" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="cover" style="background-image: url('images/crepe\ 2.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Crêpes Sucrées</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Crêpe Spaghetti</span> <span>20dh</span></div>
+                        <div class="item_con"><span>Crêpe Bella Rosa</span> <span>30dh</span></div>
+                        <div class="item_con"><span>Crêpe Au Nutella</span> <span>15dh</span></div>
+                    </div>
+                </div>
+                <div id="crepe_salee_container" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="cover" style="background-image: url('images/crepe\ 3.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Crêpes Salées</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Crêpe Poulet</span> <span>25dh</span></div>
+                        <div class="item_con"><span>Crêpe Viande Hachée</span> <span>25dh</span></div>
+                        <div class="item_con"><span>Crêpe fromage</span> <span>28dh</span></div>
+                    </div>
+                </div> 
+
+
+                <div id="dessert_container" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="cover" style="background-image: url('images/Dessert.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Dessert</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Crème Brulé</span> <span>17dh</span></div>
+                        <div class="item_con"><span>Sweet Glacé</span> <span>18dh</span></div>
+                        <div class="item_con"><span>Mousse au Chocolat</span> <span>15dh</span></div>
+                        <div class="item_con"><span>Salade Fruit</span> <span>22dh</span></div>
+                    </div>
+                </div>
+                <div id="gaufre_container" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="cover" style="background-image: url('images/gaufre.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Gaufres</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>Gaufre Nature</span> <span>18dh</span></div>
+                        <div class="item_con"><span>Gaufre Chocolat</span> <span>22dh</span></div>
+                        <div class="item_con"><span>Gaufre Nutella</span> <span>22dh</span></div>
+                    </div>
+                </div>
+
+
+                <div id="icecream_container" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="cover" style="background-image: url('images/glace.webp') ;"></div>
+                    <h1 style="width: 100%; text-align: center; margin: 1rem auto;">Icecream</h1>
+                    <div style="width: 85%; ">
+                        <div class="item_con"><span>1 Bloule</span> <span>9dh</span></div>
+                        <div class="item_con"><span>2 Bloules</span> <span>18dh</span></div>
+                        <div class="item_con"><span>3 Bloule</span> <span>26dh</span></div>
+                        <div class="item_con"><span>Coupes Royale</span> <span>32dh</span></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgb(73, 34, 34); height: 50px; width: 100vw; color: white; display: flex; justify-content: center; align-items: center; border-top: 1px solid white;">
+
+        <div>By <a href="#" class="link_a">Joezv</a> at <a href="https://joevev.github.io/mziouka-poly-service.github.io/" class="link_a">MzPolyservices</a> | ©2024</div>
+ 
+     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('#coffe').on('click', function (){
+                $('.selected').removeClass('selected');
+                $('#coffe').addClass('selected');
+                
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#tea_container, #coffe_container, #mokhito_container, #juice_container, #burger_container, #breakfast_container, #plats_container, #tacos_container, #sandwich_container, #salade_container, #crepe_sucree_container, #crepe_salee_container, #dessert_container, #gaufre_container, #icecream_container, #cocktail_container, #milkshake_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+               
+            });
+            $('#tea').on('click', function (){
+
+
+                $('.selected').removeClass('selected');
+                $('#tea').addClass('selected');
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#mokhito_container, #juice_container, #burger_container, #breakfast_container, #plats_container, #tacos_container, #sandwich_container, #salade_container, #crepe_sucree_container, #crepe_salee_container, #dessert_container, #gaufre_container, #icecream_container, #cocktail_container, #milkshake_container').css("display","none");
+                    $('#tea_container, #coffe_container,#ice_tea_container, #bubble_tea_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+                
+
+            });
+            $('#drinks').on('click', function (){
+             
+                $('.selected').removeClass('selected');
+                $('#drinks').addClass('selected');
+
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#tea_container, #coffe_container,#ice_tea_container, #bubble_tea_container, #burger_container, #breakfast_container, #plats_container, #tacos_container, #sandwich_container, #salade_container, #crepe_sucree_container, #crepe_salee_container, #dessert_container, #gaufre_container, #icecream_container').css("display","none");
+                    $('#mokhito_container, #juice_container, #cocktail_container, #milkshake_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+
+              
+             
+                
+             
+            });
+            $('#breakfast').on('click', function (){
+
+
+                $('.selected').removeClass('selected');
+                $('#breakfast').addClass('selected');
+
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#tea_container, #coffe_container,#ice_tea_container, #bubble_tea_container, #mokhito_container, #juice_container, #cocktail_container, #milkshake_container, #burger_container, #plats_container, #tacos_container, #sandwich_container, #salade_container, #crepe_sucree_container, #crepe_salee_container, #dessert_container, #gaufre_container, #icecream_container').css("display","none");
+                    $('#breakfast_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+               
+                
+               
+            });
+            $('#plats').on('click', function (){
+
+
+                $('.selected').removeClass('selected');
+                $('#plats').addClass('selected');
+        
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#tea_container, #coffe_container,#ice_tea_container, #bubble_tea_container, #mokhito_container, #juice_container, #cocktail_container, #milkshake_container, #breakfast_container, #burger_container, #tacos_container, #sandwich_container, #salade_container, #crepe_sucree_container, #crepe_salee_container, #dessert_container, #gaufre_container, #icecream_container').css("display","none");
+                    $('#plats_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+              
+            });
+            $('#burgers').on('click', function (){
+
+
+                $('.selected').removeClass('selected');
+                $('#burgers').addClass('selected');
+              
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#tea_container, #coffe_container,#ice_tea_container, #bubble_tea_container, #mokhito_container, #juice_container, #cocktail_container, #milkshake_container, #breakfast_container, #plats_container, #tacos_container, #sandwich_container, #salade_container, #crepe_sucree_container, #crepe_salee_container, #dessert_container, #gaufre_container, #icecream_container').css("display","none");
+                    $('#burger_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+              
+            });
+            $('#tacos').on('click', function (){
+
+
+                $('.selected').removeClass('selected');
+                $('#tacos').addClass('selected');
+             
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#tea_container, #coffe_container,#ice_tea_container, #bubble_tea_container, #mokhito_container, #juice_container, #cocktail_container, #milkshake_container, #breakfast_container, #plats_container, #burger_container, #sandwich_container, #salade_container, #crepe_sucree_container, #crepe_salee_container, #dessert_container, #gaufre_container, #icecream_container').css("display","none");
+                    $('#tacos_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+              
+            })
+            $('#sandwich').on('click', function (){
+
+
+                $('.selected').removeClass('selected');
+                $('#sandwich').addClass('selected');
+
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#tea_container, #coffe_container,#ice_tea_container, #bubble_tea_container, #mokhito_container, #juice_container, #cocktail_container, #milkshake_container, #breakfast_container, #plats_container, #burger_container, #tacos_container, #salade_container, #crepe_sucree_container, #crepe_salee_container, #dessert_container, #gaufre_container, #icecream_container').css("display","none");
+                    $('#sandwich_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+              
+            });
+            $('#salades').on('click', function (){
+
+
+                $('.selected').removeClass('selected');
+                $('#salades').addClass('selected');
+
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#tea_container, #coffe_container,#ice_tea_container, #bubble_tea_container, #mokhito_container, #juice_container, #cocktail_container, #milkshake_container, #breakfast_container, #plats_container, #burger_container, #tacos_container, #sandwich_container, #crepe_sucree_container, #crepe_salee_container, #dessert_container, #gaufre_container, #icecream_container').css("display","none");
+                    $('#salade_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+                
+              
+            });
+            $('#crepes').on('click', function (){
+
+
+                $('.selected').removeClass('selected');
+                $('#crepes').addClass('selected');
+            
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#tea_container, #coffe_container,#ice_tea_container, #bubble_tea_container, #mokhito_container, #juice_container, #cocktail_container, #milkshake_container, #breakfast_container, #plats_container, #burger_container, #tacos_container, #sandwich_container, #salade_container, #dessert_container, #gaufre_container, #icecream_container').css("display","none");
+                    $('#crepe_sucree_container, #crepe_salee_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+              
+            });
+            $('#dessert').on('click', function (){
+
+
+                $('.selected').removeClass('selected');
+                $('#dessert').addClass('selected');
+           
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#tea_container, #coffe_container,#ice_tea_container, #bubble_tea_container, #mokhito_container, #juice_container, #cocktail_container, #milkshake_container, #breakfast_container, #plats_container, #burger_container, #tacos_container, #sandwich_container, #salade_container, #crepe_sucree_container, #crepe_salee_container, #icecream_container').css("display","none");
+                    $('#dessert_container, #gaufre_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+              
+            });
+            $('#glaces').on('click', function (){
+
+
+                $('.selected').removeClass('selected');
+                $('#glaces').addClass('selected');
+                
+                $('#sugg').hide(400);
+                
+                setTimeout(function() { 
+                    $('#tea_container, #coffe_container,#ice_tea_container, #bubble_tea_container, #mokhito_container, #juice_container, #cocktail_container, #milkshake_container, #breakfast_container, #plats_container, #burger_container, #tacos_container, #sandwich_container, #salade_container, #crepe_sucree_container, #crepe_salee_container, #dessert_container, #gaufre_container').css("display","none");
+                    $('#icecream_container').css("display","flex");
+                    $('#sugg').show(600);
+                }, 400);
+            })
+            $( window ).on( "load", function() {
+                setTimeout(function() { 
+                    $('#loader').fadeOut();
+                    $('html').css('overflow','scroll');
+                }, 2000);
+             
+            });
+        })
+
+
+            
+        
+       
+       
+    </script>
+</body>
+</html>
